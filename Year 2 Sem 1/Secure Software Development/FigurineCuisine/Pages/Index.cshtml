@@ -1,0 +1,43 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Figurine Cuisine";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Figurines</h1>
+    <p>Your trusted figurine seller</p>
+</div>
+
+<div class="card-columns">
+    <div class="card">
+        <div class="card-img" style="background-image:url('https://www.sideshow.com/storage/product-images/911209/anya-forger_spy-x-family_gallery_6297b5207521b.jpg');"></div>
+        <div class="card-body" style="display: flex; justify-content: center; align-items: center;">
+            <h4 class="card-title">Anime</h4>
+        </div>
+        <div class="card-footer" style="display: flex; justify-content: center; align-items: center;">
+            <a asp-page="./Products/Products" asp-route-FigurineCategory="Anime">Show Items</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img" style="background-image:url('https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F10%2Flego-originals-wooden-figure-0.jpg?w=960&cbr=1&q=90&fit=max');"></div>
+        <div class="card-body" style="display: flex; justify-content: center; align-items: center;">
+            <h4 class="card-title">Wooden</h4>
+        </div>
+        <div class="card-footer" style="display: flex; justify-content: center; align-items: center;">
+            <a asp-page="./Products/Products" asp-route-FigurineCategory="Wooden">Show Items</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img" style="background-image:url('https://i.ebayimg.com/images/g/QKkAAOSwiyRheDbK/s-l500.jpg');"></div>
+        <div class="card-body" style="display: flex; justify-content: center; align-items: center;">
+            <h4 class="card-title">Others</h4>
+        </div>
+        <div class="card-footer" style="display: flex; justify-content: center; align-items: center;">
+            <a asp-page="./Products/Products" asp-route-FigurineCategory="Others">Show Items</a>
+        </div>
+    </div>
+
+</div>
